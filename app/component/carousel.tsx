@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Image from "next/image";
+// Carousel
 
 interface ImageData {
   id: string;
