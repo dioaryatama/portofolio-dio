@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 interface ImageData {
