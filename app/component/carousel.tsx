@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import "aos/dist/aos.css";
+import Image from "next/image";
 
 interface ImageData {
   id: string;
@@ -53,7 +53,7 @@ const Carousel: React.FC = () => {
         <div className=" w-full max-w-xl">
           {data
             ? data?.map((arr, index) => (
-                <img
+                <Image
                   key={arr.id}
                   className={`w-screen h-screen object-cover absolute transition-all duration-1000 ${
                     index === currentIndex
