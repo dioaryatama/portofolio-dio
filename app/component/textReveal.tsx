@@ -1,5 +1,5 @@
 import "./textReveal.css";
-import AOS from "aos";
+// import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
 
