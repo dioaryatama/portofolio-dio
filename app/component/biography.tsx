@@ -23,7 +23,7 @@ const Biography: React.FC = () => {
               Bachelor Degree of Information Systems
             </h1>
             <p className=" font-extralight text-md">
-              Stmik Triguna Dharma, Medan
+              STMIK Triguna Dharma, Medan
             </p>
           </div>
         </div>

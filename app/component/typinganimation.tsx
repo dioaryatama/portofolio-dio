@@ -23,7 +23,7 @@ const TypingAnimation: React.FC<TypingAnimationProps> = ({ text }) => {
             return newText;
           });
           setCharIndex(charIndex + 1);
-        }, 100); // Kecepatan mengetik (100ms per karakter)
+        }, 100);
         return () => clearTimeout(timeout);
       } else {
         setLineIndex(lineIndex + 1);

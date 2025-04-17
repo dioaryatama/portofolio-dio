@@ -2,7 +2,8 @@ import Navbar from "./component/navbar";
 import HeroSection from "./component/herosection";
 import LogoSlider from "./component/logoslider";
 import Biography from "./component/biography";
-import Carousel from "./component/carousel";
+import TextReveal from "./component/textReveal";
+// import Carousel from "./component/carousel";
 
 export default function Home() {
   return (
@@ -12,7 +13,9 @@ export default function Home() {
       <LogoSlider />
       <div className="border-b-2 border-[#C5A880] my-4 mx-16 "></div>
       <Biography />
-      <Carousel />
+      <TextReveal />
+
+      {/* <Carousel /> */}
 
       {/* <h1>Home Page</h1>
       <div className="bg-red">

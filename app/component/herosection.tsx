@@ -62,8 +62,8 @@ const HeroSection: React.FC = () => {
               Biography
             </label>
             <p className=" text-lg font-medium">
-              Work for money and design for love! I’m Bruno, an UI/UX
-              Interaction Designer based in Poland.
+              Being a frontend developer, I'm always pumped to work, learn new
+              things, make some money, and make the people around me smile.
             </p>
           </div>
         </div>
@@ -93,13 +93,13 @@ const HeroSection: React.FC = () => {
             <label className=" uppercase text-gray-500 text-sm font-normal">
               CLIENTS ON WORLDWIDE
             </label>
-            <Progressnumber endValue={80} duration={2000} suffix="+" />
+            <Progressnumber endValue={10} duration={2000} suffix="+" />
           </div>
           <div className="flex flex-col gap-4" data-aos="fade-left">
             <label className=" uppercase text-gray-500 text-sm font-normal">
               PROJECTS DONE
             </label>
-            <Progressnumber endValue={675} duration={2000} />
+            <Progressnumber endValue={10} duration={2000} />
           </div>
         </div>
       </div>
