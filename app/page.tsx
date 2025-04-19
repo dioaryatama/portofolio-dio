@@ -4,11 +4,14 @@ import LogoSlider from "./component/logoslider";
 import Biography from "./component/biography";
 import TextReveal from "./component/textReveal";
 import ListScroll from "./component/listScroll";
+import CircularCursor from "./component/circularCursor";
+import Footer from "./component/footer";
 // import Carousel from "./component/carousel";
 
 export default function Home() {
   return (
     <>
+      <CircularCursor />
       <Navbar />
       <HeroSection />
       <LogoSlider />
@@ -16,6 +19,7 @@ export default function Home() {
       <Biography />
       <TextReveal />
       <ListScroll />
+      <Footer />
 
       {/* <Carousel /> */}
 
