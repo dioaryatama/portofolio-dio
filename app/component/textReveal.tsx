@@ -33,11 +33,11 @@ const TextReveal = () => {
       <section
         data-aos="fade-up"
         data-aos-delay="200"
-        className=" h-screen w-screen bg-black sticky flex gap-8 p-20 "
+        className=" h-screen w-screen bg-black sticky top-0 flex gap-8 p-20 "
       >
         <div
           data-aos="fade-in"
-          data-aos-delay="1300"
+          data-aos-delay="500"
           className="relative leftSection w-2/6 h-full bg-white rounded-2xl overflow-hidden"
         >
           <Image
@@ -50,7 +50,7 @@ const TextReveal = () => {
         <div className="rightSection w-3/6 h-full flex flex-col gap-8">
           <p
             data-aos="fade-left"
-            data-aos-delay="1500"
+            data-aos-delay="700"
             className="text-gray-400 text-2xl font-normal leading-[2]"
           >
             Computers used to be{" "}
@@ -69,7 +69,7 @@ const TextReveal = () => {
           </p>
           <p
             data-aos="fade-left"
-            data-aos-delay="1600"
+            data-aos-delay="800"
             className="text-gray-400 text-2xl font-normal leading-[2]"
           >
             So, I'm a{" "}
@@ -89,12 +89,12 @@ const TextReveal = () => {
           </p>
           <div
             data-aos="fade-left"
-            data-aos-delay="1700"
+            data-aos-delay="900"
             className=" border-t-2 border-gray-500"
           ></div>
           <p
             data-aos="fade-left"
-            data-aos-delay="1800"
+            data-aos-delay="1000"
             className="text-2xl font-semibold  text-white leading-[2]"
           >
             Your Future Frontend Developer Here! <br />
@@ -104,6 +104,8 @@ const TextReveal = () => {
           </p>
         </div>
       </section>
+
+      <div className="sticky top-0 h-screen w-screen"></div>
     </>
   );
 };
