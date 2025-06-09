@@ -6,17 +6,17 @@ import Image from "next/image";
 const TextReveal = () => {
   return (
     <>
-      <section className="test sticky top-0 h-screen w-screen bg-black flex flex-col justify-start items-center pt-20 px-20">
+      <div className="test sticky top-0 h-screen w-screen bg-black flex flex-col justify-start items-center pt-20 px-8 md:px-20 ">
         <h1
-          data-aos="fade-top"
-          className="text-center font-extrabold text-7xl pb-8"
+          // data-aos="fade-top"
+          className="text-center font-extrabold text-4xl md:text-7xl pb-8"
         >
           <span>The Art of Making Websites Click.</span>
         </h1>
         <p
-          data-aos="fade-top"
-          data-aos-delay="300"
-          className="text-center font-bold text-5xl leading-[1.5]"
+          // data-aos="fade-top"
+          // data-aos-delay="300"
+          className="text-center font-bold text-2xl md:text-5xl leading-[1.5]"
         >
           <span>
             I work in tech as a frontend developer. That means I spend a lot of
@@ -26,19 +26,16 @@ const TextReveal = () => {
             experience.
           </span>
         </p>
-      </section>
-
+      </div>
       <div className="sticky top-0 h-screen w-screen"></div>
 
-      <section
+      <div
         data-aos="fade-up"
-        data-aos-delay="200"
-        className=" h-screen w-screen bg-black sticky top-0 flex gap-8 p-20 "
+        className=" h-auto md:h-screen w-screen bg-black sticky grid grid-cols-1 md:grid-cols-6 gap-8 p-20 "
       >
         <div
           data-aos="fade-in"
-          data-aos-delay="500"
-          className="relative leftSection w-2/6 h-full bg-white rounded-2xl overflow-hidden"
+          className="relative leftSection  md:h-[100%] h-[20vh] w-full bg-white rounded-2xl overflow-hidden md:col-span-2"
         >
           <Image
             className="  object-cover"
@@ -47,11 +44,10 @@ const TextReveal = () => {
             src="/assets/content.jpg"
           />
         </div>
-        <div className="rightSection w-3/6 h-full flex flex-col gap-8">
+        <div className="rightSection w-full h-full flex flex-col gap-8  md:col-span-3">
           <p
             data-aos="fade-left"
-            data-aos-delay="700"
-            className="text-gray-400 text-2xl font-normal leading-[2]"
+            className="text-gray-400 text-sm md:text-2xl font-normal leading-[2]"
           >
             Computers used to be{" "}
             <span className="text-white font-semibold">
@@ -69,8 +65,7 @@ const TextReveal = () => {
           </p>
           <p
             data-aos="fade-left"
-            data-aos-delay="800"
-            className="text-gray-400 text-2xl font-normal leading-[2]"
+            className="text-gray-400 text-sm md:text-2xl font-normal leading-[2]"
           >
             So, I'm a{" "}
             <span className="text-white font-semibold">
@@ -89,13 +84,11 @@ const TextReveal = () => {
           </p>
           <div
             data-aos="fade-left"
-            data-aos-delay="900"
             className=" border-t-2 border-gray-500"
           ></div>
           <p
             data-aos="fade-left"
-            data-aos-delay="1000"
-            className="text-2xl font-semibold  text-white leading-[2]"
+            className="text-md md:text-2xl font-semibold  text-white leading-[2]"
           >
             Your Future Frontend Developer Here! <br />
             Based in Medan, Indonesia.
@@ -103,9 +96,9 @@ const TextReveal = () => {
             Dio Aryatama.
           </p>
         </div>
-      </section>
+      </div>
 
-      <div className="sticky top-0 h-screen w-screen"></div>
+      <div className="sticky top-0 h-screen w-screen bg-black"></div>
     </>
   );
 };

@@ -9,13 +9,16 @@ const Footer = () => {
           data-aos="fade-up"
           data-aos-duration="5000"
           data-aos-delay="500"
-          className="text-white font-extrabold text-[124px] uppercase"
+          className="text-white font-extrabold text-4xl md:text-[124px] uppercase"
         >
           dio aryatama
         </p>
       </div>
-      <div className="bg-white sticky h-[60vh] w-full flex flex-col gap-16 justify-center items-center rounded-tl-[125px] rounded-tr-[125px]">
-        <p data-aos="fade-up" className="text-6xl font-medium text-center">
+      <div className="bg-white sticky h-[80vh] md:h-[60vh] w-full flex flex-col gap-16 justify-center items-center rounded-tl-[125px] rounded-tr-[125px]">
+        <p
+          data-aos="fade-up"
+          className="text-2xl md:text-6xl font-medium text-center"
+        >
           "Ready to transform your design into a seamless user experience?
           Contact me to explore the possibilities."
         </p>

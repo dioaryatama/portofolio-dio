@@ -21,11 +21,14 @@ const HeroSection: React.FC = () => {
   ];
   return (
     <>
-      <div className=" flex flex-col h-[80vh] gap-8 pt-28 font-extrabold">
+      <div className=" h-[60vh] md:h-screen flex flex-col py-8 font-extrabold">
         <TypingAnimation text={textArray} />
       </div>
-      <div className=" h-screen flex" data-aos="fade-up">
-        <div className="w-1/4 flex flex-col justify-around px-8">
+      <div
+        className=" h-auto md:h-screen gap-8 p-4 grid grid-cols-1 md:grid-cols-3"
+        data-aos="fade-up"
+      >
+        <div className="w-full flex flex-col justify-around px-8 gap-8">
           <div className="flex flex-col gap-4" data-aos="fade-right">
             <label className=" uppercase text-gray-500 text-sm font-normal">
               Biography
@@ -67,16 +70,18 @@ const HeroSection: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="w-2/4 flex justify-center py-8">
+        <div
+          className="w-full h-[60vh] md:h-auto flex justify-center py-8  relative"
+          data-aos="fade-up"
+        >
           <Image
             src="/assets/hero.png"
             alt="Deskripsi gambar"
-            width={550}
-            height={400}
-            className="rounded-full border-4 border-[#C5A880] border-dashed p-4"
+            fill
+            className="rounded-full border-4 object-cover object-top absolute border-[#C5A880] border-dashed p-4"
           />
         </div>
-        <div className="w-1/4 flex flex-col justify-around items-end text-right px-8 ">
+        <div className="w-full flex flex-col justify-around items-center md:items-end gap-8 text-right px-8 ">
           <div className="flex flex-col gap-4" data-aos="fade-left">
             <label className=" uppercase text-gray-500 text-sm font-normal">
               Years of Experience

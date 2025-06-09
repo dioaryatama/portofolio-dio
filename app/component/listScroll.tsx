@@ -35,28 +35,28 @@ const ListScroll = () => {
     <>
       <div className=" h-4 w-screen bg-gray-200 backdrop-blur-lg sticky"></div>
       <section>
-        <div className="title-section bg-gray-200 h-screen w-screen py-16 px-32 sticky top-0">
+        <div className="title-section bg-gray-200 h-screen w-screen py-4 px-8 md:py-16 md:px-32 sticky top-0">
           <p
             data-aos="fade-up"
-            className="text-center font-medium text-4xl uppercase mb-16"
+            className="text-center font-medium text-xl md:text-4xl uppercase mb-16"
           >
             My Frontend Developer Cornerstones
           </p>
           <p
             data-aos="fade-up"
-            className="text-center font-extrabold text-5xl "
+            className="text-center font-extrabold text-lg md:text-5xl "
           >
             "These five pillars form the bedrock of my capabilities as a
             Frontend Developer, guiding my work and ensuring quality in every
             project."
           </p>
         </div>
-        <div className="list-section grid grid-cols-2">
+        <div className="list-section grid grid-cols-1 md:grid-cols-2">
           <div className="lists-left ">
             {listItems.map((arr) => (
               <div
                 key={arr.number}
-                className="items-list bg-gray-200 p-16 h-[50vh] w-[50vw] sticky top-[50vh]"
+                className="items-list bg-gray-200 p-16 h-[50vh] w-full md:w-[50vw] sticky top-[50vh]"
               >
                 <p className="text-xl text-gray-600 font-medium">
                   {arr.number}.
@@ -66,7 +66,7 @@ const ListScroll = () => {
               </div>
             ))}
           </div>
-          <div className="lists-right h-[50vh] w-full sticky top-[50vh] p-16">
+          <div className="lists-right h-[50vh] w-full sticky top-[50vh] md:p-16 hidden md:flex">
             <div className="w-full h-full relative">
               <Image
                 data-aos="fade-left"

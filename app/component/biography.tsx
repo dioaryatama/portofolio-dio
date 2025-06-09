@@ -12,12 +12,21 @@ const Biography: React.FC = () => {
     });
   }, []);
   return (
-    <div className="p-8 h-screen w-full">
-      <h1 className=" text-5xl font-bold mb-16 text-center" data-aos="fade-up">
+    <div className="p-8 h-auto md:h-screen w-full">
+      <h1
+        className=" text-5xl font-bold mb-16 text-center hidden md:block"
+        data-aos="fade-up"
+      >
         Education - Skills - Experience
       </h1>
-      <div className="flex gap-8">
-        <div className="w-1/3 h-full flex flex-col gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+        <div className="w-full h-full flex flex-col gap-8">
+          <h1
+            className=" py-2 text-center border-b w-auto border-black font-bold uppercase text-3xl mb-4 md:hidden"
+            data-aos="fade-up"
+          >
+            Educations
+          </h1>
           <div data-aos="fade-up">
             <h1 className=" font-semibold text-2xl mb-4">
               Bachelor Degree of Information Systems
@@ -27,7 +36,14 @@ const Biography: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="w-1/3 h-full flex flex-col gap-8">
+        <div className="w-full h-full flex flex-col gap-8">
+          <h1
+            className=" py-2 text-center border-b w-auto border-black font-bold uppercase text-3xl mb-4 md:hidden"
+            data-aos="fade-up"
+          >
+            Skills
+          </h1>
+
           <div data-aos="fade-up">
             <h1 className=" font-semibold text-2xl mb-4">HTML5</h1>
             <RatingStar rating={5} maxRating={5} />
@@ -53,7 +69,13 @@ const Biography: React.FC = () => {
             <RatingStar rating={4} maxRating={5} />
           </div>
         </div>
-        <div className="w-1/3 h-full flex flex-col gap-8">
+        <div className="w-full h-full flex flex-col gap-8">
+          <h1
+            className=" py-2 text-center border-b w-auto border-black font-bold uppercase text-3xl mb-4 md:hidden"
+            data-aos="fade-up"
+          >
+            Experiences
+          </h1>
           <div data-aos="fade-up">
             <h1 className=" font-semibold text-2xl mb-4">
               Tamtech International, Yogyakarta

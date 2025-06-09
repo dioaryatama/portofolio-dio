@@ -10,13 +10,13 @@ import {
 const Navbar = () => {
   return (
     <>
-      <div className=" p-8 flex justify-between w-full h-[20vh]">
-        <div className="flex justify-start gap-8 items-center w-1/3">
+      <div className=" p-8 grid grid-cols-1 md:grid-cols-3  w-full h-auto gap-8 ">
+        <div className="flex justify-center md:justify-start gap-8 items-center w-full order-2 md:order-1">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
           <Link href="/">Contact Us</Link>
         </div>
-        <div className="w-1/3 flex justify-center">
+        <div className=" flex justify-center w-full order-1 md:order-2 ">
           <Image
             src="/assets/logo.svg"
             alt="Deskripsi gambar"
@@ -24,7 +24,7 @@ const Navbar = () => {
             height={100}
           />
         </div>
-        <div className="w-1/3 flex justify-end items-center gap-8">
+        <div className="flex justify-center md:justify-end items-center gap-8 w-full order-3">
           <Link
             target="_blank"
             href="https://www.instagram.com/tukang.ngobrol_/"

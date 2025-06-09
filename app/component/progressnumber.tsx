@@ -31,7 +31,7 @@ const Progressnumber: React.FC<ProgressNumberProps> = ({
 
   return (
     <div className="flex flex-col ">
-      <span className="text-4xl font-bold text-right">
+      <span className="text-4xl font-bold text-center md:text-right">
         {Math.round(value)}
         {suffix}
       </span>

@@ -15,7 +15,6 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <LogoSlider />
-      <div className="border-b-2 border-[#C5A880] my-4 mx-16 "></div>
       <Biography />
       <TextReveal />
       <ListScroll />
