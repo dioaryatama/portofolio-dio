@@ -34,7 +34,7 @@ const TypingAnimation: React.FC<TypingAnimationProps> = ({ text }) => {
   }, [charIndex, lineIndex, text]);
 
   return (
-    <div className="text-4xl md:text-7xl font-mono text-center px-8">
+    <div className="text-3xl md:text-7xl font-mono text-center px-8">
       {displayedText.map((line, index) => (
         <div key={index}>{line}</div>
       ))}

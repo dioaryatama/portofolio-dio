@@ -1,21 +1,35 @@
+/* 🌐 Gaya Default (Mobile) */
 .test span {
-  /* color: hsl(0, 0%, 100% / 0); */
   color: #ffffff33;
   background-image: linear-gradient(90deg, white, white);
   background-clip: text;
+  -webkit-background-clip: text;
   background-repeat: no-repeat;
   background-size: 0% 100%;
-  animation: scroll-reveal linear forwards;
-  animation-timeline: view();
+  transition: background-size 3s ease-out;
 }
 
-.test h1 span {
-  animation-range-start: cover 100vh;
-  animation-range-end: cover 150vh;
+/* Saat di-scroll di mobile: gunakan class .revealed */
+.test span.revealed {
+  background-size: 100% 100%;
 }
-.test p span {
-  animation-range-start: cover 150vh;
-  animation-range-end: cover 200vh;
+
+/* 💻 Gaya untuk Desktop: Gunakan animation-timeline */
+@media (min-width: 768px) {
+  .test span {
+    animation: scroll-reveal linear forwards;
+    animation-timeline: view();
+  }
+
+  .test h1 span {
+    animation-range-start: cover 100vh;
+    animation-range-end: cover 150vh;
+  }
+
+  .test p span {
+    animation-range-start: cover 150vh;
+    animation-range-end: cover 200vh;
+  }
 }
 
 @keyframes scroll-reveal {
